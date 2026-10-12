@@ -1,0 +1,22 @@
+<p>home works!</p>
+<h1> {{nom}}</h1> 
+<img [src]="imgurl" alt="image">
+<button (click)="bonjour()">Click me</button>
+<input [(ngModel)]="nom" type="text">
+@if(nom=="aziz") {
+    <p>Nom est aziz</p>
+}
+@else {
+    <p>Nom n'est pas aziz</p>
+}
+
+@for (s of students; track $index) {
+    <p>{{s}}</p>
+}
+@for (s2 of students2; track $index) {
+    <p>{{s2.name}} - {{s2.age}}</p>
+}
+<h1>compteur simple : {{count}}</h1>
+<button (click)="increment()">increment</button>
+<h1>compteur signal : {{counts()}}</h1>
+<button (click)="increment_signal()">increment signal</button>

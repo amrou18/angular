@@ -1,0 +1,7 @@
+<div>
+  <strong>{{ conf().title }}</strong> - {{ conf().topic }} - {{ conf().date }} - {{ conf().speaker }}
+
+  <button (click)="toggleBooking()">
+    {{ booked() ? 'Annuler la réservation' : 'Réserver' }}
+  </button>
+</div>

@@ -1,0 +1,23 @@
+<h2>Conférences à venir</h2>
+
+@for (topic of conferenceService.topics(); track topic) {
+    <button
+        (click)="conferenceService.filterByTopic(topic)"
+        [disabled]="topic === conferenceService.selectedTopic()">
+        {{ topic }}
+    </button>
+}
+
+@for (c of conferenceService.filteredConferences(); track c.id) {
+    <app-conferance-details [conf]="c"></app-conferance-details>
+} @empty {
+    <p>Aucune conférence pour ce sujet.</p>
+}
+
+<h3>Mon programme ({{ bookingService.bookedCount() }})</h3>
+
+@for (c of bookingService.bookedConferences(); track c.id) {
+    <p>{{ c.title }} - {{ c.date }}</p>
+} @empty {
+    <p>Aucune réservation.</p>
+}
