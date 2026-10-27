@@ -1,0 +1,38 @@
+form {
+  max-width: 500px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+input, textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.error {
+  color: #dc2626;
+  font-size: 13px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #6366f1;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #a5a6f6;
+  cursor: not-allowed;
+}
+
+h2 {
+  text-align: center;
+}

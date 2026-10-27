@@ -1,0 +1,17 @@
+<h2>Conference Details</h2>
+
+@if (conferance(); as conf) {
+  <div class="details">
+    <h3>{{ conf.title }}</h3>
+    <p>{{ conf.description }}</p>
+    <p>📅 Date : {{ conf.date }}</p>
+    <p>📍 Lieu : {{ conf.location }}</p>
+    <p>💰 Prix : {{ conf.price }} DT</p>
+    <p>🎟️ Places : {{ conf.nbPlaces }}</p>
+
+    <button [routerLink]="['/update', conf.id]">Modifier</button>
+    <button routerLink="/list">Retour</button>
+  </div>
+} @else {
+  <p>Chargement de la conférence {{ id() }}...</p>
+}
