@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Component, OnInit, inject, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ConferanceService } from '../conferance-service';
@@ -37,4 +38,21 @@ export class ConferanceList implements OnInit {
       error: (err) => console.error('Erreur suppression', err),
     });
   }
+=======
+import { Component, inject } from '@angular/core';
+import { ConferanceDetails } from '../conferance-details/conferance-details';
+import { ConferenceService } from '../services/conference';
+import { BookingService } from '../services/booking';
+
+/** Display only: all data and booking logic live in the services. */
+@Component({
+  selector: 'app-conferance-list',
+  imports: [ConferanceDetails],
+  templateUrl: './conferance-list.html',
+  styleUrl: './conferance-list.css',
+})
+export class ConferanceList {
+  readonly conferenceService = inject(ConferenceService);
+  readonly bookingService = inject(BookingService);
+>>>>>>> b103470507732669cf9be8f27885f96e724464fe
 }

@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { Home } from './home/home';
 import { ConferanceList } from './conferance-list/conferance-list';
+<<<<<<< HEAD
 import { NotFound } from './not-found/not-found';
 import { ConferanceDetails } from './conferance-details/conferance-details';
 import { UserForm } from './user-form/user-form';
@@ -18,4 +19,13 @@ export const routes: Routes = [
 {path:'home',component:Home},
 {path:'list',component:ConferanceList},
 {path:'**',component:NotFound},
+=======
+
+export const routes: Routes = [
+
+{path: 'home',component:Home},
+{path: 'list',component:ConferanceList},
+{path: '',redirectTo: 'home' , pathMatch:'full'}
+
+>>>>>>> b103470507732669cf9be8f27885f96e724464fe
 ];

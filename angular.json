@@ -3,11 +3,19 @@
   "version": 1,
   "cli": {
     "packageManager": "npm",
+<<<<<<< HEAD
     "analytics": "123ecff9-00cf-4407-90bd-5e3cc93cc6a3"
   },
   "newProjectRoot": "projects",
   "projects": {
     "ssa4": {
+=======
+    "analytics": false
+  },
+  "newProjectRoot": "projects",
+  "projects": {
+    "FirstProject": {
+>>>>>>> b103470507732669cf9be8f27885f96e724464fe
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -57,10 +65,17 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
+<<<<<<< HEAD
               "buildTarget": "ssa4:build:production"
             },
             "development": {
               "buildTarget": "ssa4:build:development"
+=======
+              "buildTarget": "FirstProject:build:production"
+            },
+            "development": {
+              "buildTarget": "FirstProject:build:development"
+>>>>>>> b103470507732669cf9be8f27885f96e724464fe
             }
           },
           "defaultConfiguration": "development"

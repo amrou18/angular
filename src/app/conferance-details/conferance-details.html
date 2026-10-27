@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h2>Conference Details</h2>
 
 @if (conferance(); as conf) {
@@ -15,3 +16,12 @@
 } @else {
   <p>Chargement de la conférence {{ id() }}...</p>
 }
+=======
+<div>
+  <strong>{{ conf().title }}</strong> - {{ conf().topic }} - {{ conf().date }} - {{ conf().speaker }}
+
+  <button (click)="toggleBooking()">
+    {{ booked() ? 'Annuler la réservation' : 'Réserver' }}
+  </button>
+</div>
+>>>>>>> b103470507732669cf9be8f27885f96e724464fe

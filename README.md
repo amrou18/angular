@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 # Ssa4
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.19.
+=======
+# FirstProject
+
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.24.
+>>>>>>> b103470507732669cf9be8f27885f96e724464fe
 
 ## Development server
 
